@@ -4,12 +4,12 @@
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse"></div>
-            <div class="navbar-nav ms-auto">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="form.php" class="nav-item nav-link">Formular</a>
-                <a href="lieblingstier.php" class="nav-item nav-link">Lieblingstier</a>
-                <a href="liebligstierresultat.php" class="nav-item nav-link">Lieblingstierresultat</a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="formular.html" class="nav-item nav-link">Formular</a>
+                    <a href="confirmation.html" class="nav-item nav-link">Bestätigung</a>
+                </div>
             </div>
         </div>
     </nav>
