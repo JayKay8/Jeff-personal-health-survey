@@ -17,7 +17,7 @@
                     <!-- Text-->
                     <form class="" id="intro">
                         <h2>Frage 4:</h2><br>
-                        <h4>Welche zusätzliche körperliche</h4>
+                        <h3>Welche zusätzliche körperliche</h3>
                         <h3> Aktivität betreibst du am meisten?</h3>
                     <div class="text-center">
                 </div>                              

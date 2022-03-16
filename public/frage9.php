@@ -16,24 +16,25 @@
                 <div class="col-8">
                     <!-- Text-->
                     <form class="" id="intro">
-                        <h2>Frage 5:</h2><br>
-                        <h5>Hast du das Gefühl, zu wenig, genügend oder zu viel zusätzliche körperliche Aktivitäten betreibst</h5>
+                        <h2>Frage 9:</h2><br>
+                        <h5>An einem typischen Tag:</h5> 
+                        <h5>Wie viele deiner Malzeiten oder Snacks enthalten Früchte</h5>
                     <div class="text-center">
                 </div>                              
             </div>
         </div> 
 
                 <!-- Image -->
-        <img src="/images/runners.jpeg" class="img-fluid" alt="" />
+        <img src="/images/früchte.webp" class="img-fluid" alt="" />
 
         
         
-        <label for="question1" class="form-label">Bewertung 1 - 5  zu wenig / zu viel</label>
-    <input type="range" class="form-range" min="0" max="5" step="1" id="question1">  
-    <div class="text-center">
-  <button type="button" class="btn btn-primary">Absenden</button></div><br>
-  <div class="text-center">
-  <button type="button" class="btn btn-primary">zurücksetzen</button></div>
+    <div class="form-outline">
+    <label class="form-label" for="typeNumber">Nummer eingeben</label>
+  <input type="number" id="typeNumber" class="form-control" /></div><br>
+  
+  <button type="button" class="btn btn-primary">Absenden</button></div>
+ 
 
     </main>
     <footer>

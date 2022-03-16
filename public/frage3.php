@@ -17,7 +17,7 @@
                     <!-- Text-->
                     <form class="" id="intro">
                         <h2>Frage 3:</h2><br>
-                        <h4>Wie wichtig ist körperliche</h4>
+                        <h3>Wie wichtig ist körperliche</h3>
                         <h3> Aktivität für dich?</h3>
                     <div class="text-center">
                 </div>                              
