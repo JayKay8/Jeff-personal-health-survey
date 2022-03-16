@@ -38,12 +38,12 @@
             </div>
         </div> 
         
-        <label for="question1" class="form-label">Bewertung 1 - 5</label>
+        <label for="question1" class="form-label">Bewertung 1 - 5 nicht gesund / sehr gesund</label>
     <input type="range" class="form-range" min="0" max="5" step="1" id="question1">  
     <div class="text-center">
   <button type="button" class="btn btn-primary">Absenden</button></div><br>
   <div class="text-center">
-  <button type="button" class="btn btn-primary">zurücksetzen</button></div>
+  <button type="button" class="btn btn-primary">Zurücksetzen</button></div><br>
 
     </main>
     <footer>

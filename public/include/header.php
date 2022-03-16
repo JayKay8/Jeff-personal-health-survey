@@ -6,9 +6,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="formular.html" class="nav-item nav-link">Formular</a>
-                    <a href="confirmation.html" class="nav-item nav-link">Bestätigung</a>
+                    <a href="index.php" class="nav-item nav-link">Home</a>
+                    <a href="frage2.php" class="nav-item nav-link">Q2</a>
+                    <a href="frage3.php" class="nav-item nav-link">Q3</a>
+                    <a href="frage4.php" class="nav-item nav-link">Q4</a>
+                    
                 </div>
             </div>
         </div>
