@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+
+
+ <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <?php require "include/head.php" ?>
+<?php include 'php/data-collector.php'; ?>
+<?php require "include/head.php" ?>
 </head>
-
 <body>
     <header>
-        <?php include "include/header.php"; ?>
+    <?php require "include/header.php" ?>
     </header>
     <main>
     <div class="container">
@@ -15,33 +16,33 @@
                 <div class="col-2"></div>
                 <div class="col-8">
                     <!-- Text-->
-                    <form class="" id="intro">
+                    <form class="" id="question8">
                         <h2>Frage 8:</h2><br>
                         <h5>An einem typischen Tag:</h5> 
-                        <h5>Wie viele deiner Malzeiten oder Snacks enthalten Gemüse</h5>
+                        <h5>Wie viele deiner Mahlzeiten oder Snacks enthalten Gemüse</h5>
                     <div class="text-center">
                 </div>                              
             </div>
         </div> 
 
                 <!-- Image -->
-        <img src="/images/gemüse.jpeg" class="img-fluid" alt="" />
+        <img src="images/gemüse.jpeg" class="img-fluid" alt="" />
 
         
         
     <div class="form-outline">
     <label class="form-label" for="typeNumber">Nummer eingeben</label>
-  <input type="number" id="typeNumber" class="form-control" /></div><br>
+  <input type="number" id="typeNumber" min="0" class="form-control" /></div><br>
   
   <button type="button" class="btn btn-primary">Absenden</button></div>
  
 
     </main>
     <footer>
-        <?php include "include/footer.php"; ?>
+        
     </footer>
 
-    <?php include "include/background.php"; ?>
+    <script src="js/app.js"></script>
 </body>
 
 

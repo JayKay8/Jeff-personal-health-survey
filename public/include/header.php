@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <span class="navbar-brand">Personal Health Survey</span>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" 
+            data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -16,6 +17,7 @@
                     <a href="frage8.php" class="nav-item nav-link">Frage 8</a>
                     <a href="frage9.php" class="nav-item nav-link">Frage 9</a>
                     <a href="frage10.php" class="nav-item nav-link">Frage 10</a>
+                    <a href="auswertung.php" class="nav-item nav-link">Auswertung</a>
                 </div>
             </div>
         </div>

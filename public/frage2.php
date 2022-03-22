@@ -1,15 +1,24 @@
+
+
+<?php 
+        session_start();
+        session_destroy();
+       
+
+?>
+ <?php include 'php/data-collector.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <?php require "include/head.php" ?>
+<?php require "include/head.php" ?>
 </head>
-
 <body>
     <header>
-        <?php include "include/header.php"; ?>
+    <?php require "include/header.php" ?>
     </header>
     <main>
+
     <div class="container">
         <div class="row">
             <div class="col-1"></div>
@@ -22,30 +31,38 @@
             <div class="text-fluid">
 
                 <!-- Image -->
-        <img src="/images/Nahrungsergänzung.png" class="img-fluid" alt="" />
+        <img src="images/Nahrungsergänzung.png" class="img-fluid" alt="" />
 
+        <form action="frage3.php" method="post" onsubmit="return validateRadio('single-choice');">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="single-choice" id="single-choice-0" value="0">
+            <label class="form-check-label" for="single-choice-0">
+                Nein
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="single-choice" id="single-choice-1" value="1">
+            <label class="form-check-label" for="single-choice-1">
+                Ja
+            </label>
+        </div>
 
-        <div class="question2">
-  <input class="form-check-input" type="radio" name="question2" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">Ja</label>
-</div>
-        <div class="question2">
-  <input class="form-check-input" type="radio" name="question2" id="flexRadioDefault2">
-  <label class="form-check-label" for="flexRadioDefault2">Nein</label></div><br>
-  <button type="button" class="btn btn-primary">Absenden</button>
-
-
-    </div> 
+        <input type="hidden" name="lastPageID" value="frage3">
+        <p id="validation-warning" class="warning"></p>
+        <button type="submit" class="btn btn-primary">Absenden</button>
+        <p class="spacer"></p>
+      </form>
         
 
     </main>
     <footer>
-        <?php include "include/footer.php"; ?>
+        
     </footer>
 
-    <?php include "include/background.php"; ?>
+   
+
+    <script src="js/app.js"></script>
 </body>
-
-
+</html>
 
 <?php

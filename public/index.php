@@ -1,28 +1,27 @@
+<?php 
+        session_start();
+        session_destroy();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <?php require "include/head.php" ?>
+<?php require "include/head.php" ?>
 </head>
-
 <body>
     <header>
-        <?php include "include/header.php"; ?>
+    <?php require "include/header.php" ?>
     </header>
     <main>
-    
-    
-    
+
     <div class="container">
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
                     <!-- Text-->
-                    <form class="" id="intro">
-                        <h4>Willkommen zu unserem Fragebogen</h4><br>
-                        <h4>über ihre Ernahrung</h4> 
-                        <h4>ihren Fitnessstand</h4> 
-                        <h4>und sportlichkeit</h4><br>
+                    <form class="" id="question1">
+                        <h4>Willkommen zu unserem Fragebogen über ihre Ernahrung ihren Fitnessstand und sportlichkeit</h4><br>
+                        
                     
                     <div class="text-center">
                 </div>                              
@@ -30,7 +29,8 @@
         </div> 
 
                 <!-- Image -->
-        <img src="/images/health.jpg" class="img-fluid" alt="" /><br>
+                <img src="images/health.jpg" class="img-fluid" alt="" /><br>
+       
 
         <div class="container">
             <div class="row">
@@ -46,25 +46,39 @@
             </div>
         </div> 
         
-    
+        <form action="frage2.php" method="post" onsubmit="return validateQuestion('range-slider');">
+        <p class="instruction"></p>
+
+        <div class="row flex-nowrap">
+            <div class="col">
+              <p>Ungesund</p>
+            </div>
+            <div class="col" style="text-align: center;">
+              <p>mittelmässig</p>
+            </div>
+            <div class="col" style="text-align: right;">
+              <p>Sehr gesund</p>
+            </div>
+        </div>
+
+        <input type="range" name="range-slider" class="form-range" min="0" max="5" step="1" id="range-slider" onchange="sliderChanged();">
+        <input type="hidden" name="lastPageID" value="index">
+        <input type="hidden" name="range-slider-changed" id="range-slider-changed">
+        <p id="validation-warning" class="warning">Benutze den Slider</p>
+        <button type="submit" class="btn btn-primary">Absenden</button>
+        <p class="spacer"></p>
+      </form>
 
 
-        <label for="question1" class="form-label">Bewertung 1 - 5 nicht gesund / sehr gesund</label>
-    <input type="range" class="form-range" min="0" max="5" step="1" id="range-slider">  
-    <div class="text-center">
-  <button type="button" class="btn btn-primary">Absenden</button></div><br>
-  <div class="text-center">
-  <button type="button" class="btn btn-primary">Zurücksetzen</button></div><br>
 
     </main>
-    
     <footer>
-        <?php include "include/footer.php"; ?>
+   
     </footer>
-
-    <?php include "include/background.php"; ?>
+    
+    
+    <script src="js/app.js"></script>
 </body>
+</html>
 
 
-
-<?php

@@ -1,13 +1,14 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <?php require "include/head.php" ?>
+<?php include 'php/data-collector.php'; ?>
+<?php require "include/head.php" ?>
 </head>
-
 <body>
     <header>
-        <?php include "include/header.php"; ?>
+    <?php require "include/header.php" ?>
     </header>
     <main>
     <div class="container">
@@ -15,17 +16,17 @@
                 <div class="col-2"></div>
                 <div class="col-8">
                     <!-- Text-->
-                    <form class="" id="intro">
+                    <form class="" id="question10">
                         <h2>Frage 10:</h2><br>
                         <h5>An einem typischen Tag:</h5> 
-                        <h5>Wie viele deiner Malzeiten oder Snacks kommen aus der Mikrowelle oder sind schon fertig zubereitet</h5>
+                        <h5>Wie viele deiner Mahlzeiten oder Snacks kommen aus der Mikrowelle oder sind schon fertig zubereitet</h5>
                     <div class="text-center">
                 </div>                              
             </div>
         </div> 
 
                 <!-- Image -->
-        <img src="/images/ferigmenu.jpg" class="img-fluid" alt="" />
+        <img src="images/ferigmenu.jpg" class="img-fluid" alt="" />
 
         
         
@@ -38,10 +39,10 @@
 
     </main>
     <footer>
-        <?php include "include/footer.php"; ?>
+        
     </footer>
 
-    <?php include "include/background.php"; ?>
+    <script src="js/app.js"></script>
 </body>
 
 
